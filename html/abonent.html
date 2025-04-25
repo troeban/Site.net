@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Для абонентів - Dnipro-ofis.net</title>
+    <meta name="description" content="Інформація для абонентів: як підключити інтернет, змінити тариф, оплатити послуги або отримати технічну підтримку.">
+    <meta name="keywords" content="Інтернет, Послуги, Тарифи, Технічна підтримка, Підключення, Wi-Fi, VPN, Dnipro-ofis.net">
+
+    <link rel="icon" type="image/x-icon" href="../img/icon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/home.css" type="text/css">
+    <link rel="stylesheet" href="../css/abonent.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tektur:wght@400..900&display=swap" rel="stylesheet">
+    
+    <script>
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'uk', 
+                includedLanguages: 'en,uk,ru,de,pl,es,fr', 
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+            }, 'google_translate_element');
+        }
+    </script>
+    <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</head>
+<body>
+    <div id="google_translate_element"></div>
+    <div class="wrapper">
+        <header class="cont">
+            <!-- Голова -->
+            <div class="container">
+                <div class="header">
+                    <span class="logo">Dnipro-ofis.net</span>
+                    <div class="menu">
+                        <ul class="menu">
+                            <li><a href="../index.html">Головна</a></li>
+                            <li><a href="poslygu.html">Послуги</a></li>
+                            <li><a href="abonent.html">Абоненту</a></li>
+                            <li><a href="oskab.html">Особистий Кабінет</a></li>
+                        </ul>
+                        <div class="theme-toggle">
+                            <label class="switch">
+                                <input type="checkbox" id="theme-toggle">
+                                <span class="slider">
+                                    <img class="icon sun" src="../img/sun.png" alt="Сонце">
+                                    <img class="icon moon" src="../img/moon.png" alt="Місяць">
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <!--Зворотній зв'язок-->
+                <h1 class="section-title">Заявка на підключення</h1>
+                <p class="section">Для подання заявки на підключення вкажіть ваші контактні дані (ПІБ, номер телефону, email), адресу підключення, бажаний тарифний план та зручний час для монтажу. Надішліть заявку через сайт, електронну пошту або зверніться до нашого контакт-центру. Наші спеціалісти зв’яжуться з вами для уточнення деталей та узгодження дати підключення.</p>
+                <div class="feedback-section container mt-5">
+                    <form action="https://formsubmit.co/stepanenko060320@gmail.com" method="POST">
+                        <input type="hidden" name="_captcha" value="false">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Ваш ПІБ</label>
+                            <input type="text" class="form-control" id="name" name="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Ваш номер телефона</label>
+                            <input type="tel" class="form-control" id="phone" name="phone" required pattern="\+?[0-9\s\-\(\)]{7,}">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Ваше повідомлення</label>
+                            <textarea class="form-control" id="message" name="message" rows="3" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Відправити</button>
+                    </form>
+                </div>
+
+                <!-- Спливаюче повідомлення -->
+                <div id="alertBox" style="display: none;" class="alert alert-success mt-3" role="alert">
+                    ✅ Ваше повідомлення успішно відправлено!
+                </div>
+
+                <!-- Документация -->
+                <h1 class="section-centr">Документація</h1>
+                <p class="section1">У розділі "Документація" ви знайдете всі необхідні матеріали для підключення та використання наших послуг. Тут зібрані інструкції, технічні специфікації та рекомендації щодо налаштування обладнання.
+
+                    Також доступні договори, умови надання послуг та офіційні правила користування мережею. Ці документи допоможуть вам ознайомитися з важливою інформацією щодо прав і обов’язків абонентів.
+                    
+                    Для зручності ми додали відповіді на поширені запитання та керівництва з усунення можливих несправностей. У разі додаткових питань ви завжди можете звернутися до нашої служби підтримки.</p>
+                <div class="docs-links">
+                    <a href="../docs/dogovor.pdf" target="_blank" download>Договір підключення</a>
+                    <a href="../docs/licens.pdf" target="_blank" download>Ліцензія на надання інтернет-послуг</a>
+                </div>
+                <!-- вопрос ответ -->
+                <div class="faq-section mt-5">
+                    <h1 class="section-centr">Питання-відповіді</h1>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h5>Як підключити інтернет у своєму будинку?</h5>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Щоб підключити інтернет, залиште заявку на нашому сайті або зв’яжіться з оператором. Наші спеціалісти узгодять дату монтажу та проведуть підключення у зручний для вас час.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h5>Яка швидкість інтернету буде у мене вдома?</h5>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Швидкість залежить від обраного тарифного плану. У реальних умовах вона може змінюватися через особливості мережі, завантаженість каналу та якість обладнання.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h5>Як змінити тарифний план?</h5>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Змінити тариф можна через особистий кабінет на сайті або звернувшись до нашої служби підтримки. Зміна тарифу набуває чинності з початку наступного розрахункового періоду.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Новини -->
+                <h1 class="section-centr">Новини</h1>
+                <div class="row mt-5">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="../img/news.jpg" class="card-img-top" alt="">
+                            <div class="card-body">
+                                <p class="card-text">Ми раді повідомити, що наша компанія розширюється! Збільшення обсягів роботи дозволяє нам пропонувати ще більше послуг та покращувати якість обслуговування. Вдячні за вашу підтримку і готові до нових досягнень разом з вами!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="../img/bonks.jpg" class="card-img-top" alt="">
+                            <div class="card-body">
+                                <p class="card-text">Ми підвищили продуктивність наших послуг, що забезпечить ще швидший та стабільніший інтернет для вас. Продовжуємо працювати над покращенням якості сервісу.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="../img/cena_stonks.jpg" class="card-img-top" alt="">
+                            <div class="card-body">
+                                <p class="card-text">З 1 травня 2025 року відбудеться коригування тарифів. Ми прагнемо забезпечити вас найкращими умовами для користування послугами, тому зростання вартості спрямоване на покращення якості та розвитку мережі. Всі деталі доступні на нашому сайті.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Підвал -->
+                <div class="footer mt-5">
+                    <div class="container">
+                        <div class="rov">
+                            <div class="footer-col">
+                                <h4>Контакти</h4>
+                                <ul>
+                                    <li>(+380)00 000 00 00</li>
+                                    <li>test@gmail.com</li>
+                                </ul>
+                            </div>
+                            <div class="footer-col">
+                                <h4>Соц мережі</h4>
+                                <div class="social-links">
+                                    <a href="#"><i class="fab fa-telegram"></i></a>
+                                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- JavaScript для показу спливаючого повідомлення -->
+    <script>
+        document.querySelector("form").addEventListener("submit", function(e) {
+            e.preventDefault(); // Отключаем стандартную отправку
+        
+            const form = e.target;
+            const formData = new FormData(form);
+        
+            fetch(form.action, {
+                method: "POST",
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            })
+            .then(response => {
+                if (response.ok) {
+                    // Показуємо спливаюче повідомлення з анімацією
+                    const alertBox = document.getElementById("alertBox");
+                    alertBox.style.display = "block"; // Спочатку виводимо повідомлення
+                    setTimeout(() => {
+                        alertBox.classList.add("show"); // Додаємо клас для плавного показу
+                    }, 10); // Трішки затримуємо для анімації
+        
+                    setTimeout(() => {
+                        alertBox.classList.remove("show"); // Видаляємо клас після 3 секунд, щоб зникло
+                    }, 3000);
+        
+                    setTimeout(() => {
+                        alertBox.style.display = "none"; // Приховуємо повідомлення після зникнення
+                    }, 3500); // Час, коли воно має зникнути
+        
+                    form.reset(); // Очищення форми
+                } else {
+                    alert("Помилка при відправці. Будь ласка, спробуйте пізніше.");
+                }
+            })
+            .catch(error => {
+                alert("Помилка з'єднання. Спробуйте пізніше.");
+            });
+        });
+    </script>
+    <script>
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+
+                // Скрыть все ответы, кроме текущего
+                document.querySelectorAll('.faq-answer').forEach(ans => {
+                    if (ans !== answer) {
+                        ans.classList.remove('show');
+                    }
+                });
+
+                // Переключить видимость текущего ответа
+                answer.classList.toggle('show');
+            });
+        });  
+    </script>
+    <script src="../javascript/home.js"></script>
+</body>
+</html>

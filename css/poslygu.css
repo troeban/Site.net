@@ -1,0 +1,150 @@
+.tariffs-section {
+    text-align: center; 
+    margin: 20px auto; 
+}
+
+.tariffs-title {
+    font-size: 32px; 
+    margin-bottom: 20px; 
+}
+
+.card {
+    background: rgb(193,198,201); 
+    border: none; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    padding: 15px; 
+    height: 100%; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between; 
+}
+
+.card-body {
+    flex-grow: 1; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between; 
+}
+
+.row {
+    display: flex; 
+    justify-content: center; 
+    gap: 20px; 
+    flex-wrap: wrap; 
+}
+
+.col-md-4 {
+    flex: 0 1 30%; 
+    max-width: 30%; 
+    box-sizing: border-box; 
+}
+
+.card-text {
+    color: #111010; 
+    font-size: 16px; 
+    line-height: 1.5; 
+}
+
+.custom-paragraph1 {
+    text-align: justify; 
+    margin-left: 250px; 
+    margin-right: 10px; 
+    width: 60%; 
+}
+
+.custom-paragraph2 {
+    text-align: justify; 
+    margin-left: 20px; 
+    width: 60%; 
+}
+
+.ron1 {
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    gap: 20px; 
+    padding: 0 50px; 
+}
+
+.col1-md-8 {
+    flex: 1; 
+    text-align: left; 
+    max-width: 50%; 
+}
+
+.col1-md-4 {
+    flex: 0 0 auto; 
+    display: flex; 
+    justify-content: center; 
+    max-width: 50%; 
+}
+
+.hero1-img img {
+    max-width: 90%; 
+    height: auto; 
+    display: block; 
+}
+
+.section-title {
+    font-size: 50px; 
+    text-align: center; 
+    margin-bottom: 20px; 
+    margin-top: 40px; 
+    color: #333; 
+}
+.hero1-img {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.hero1-img.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+/* Медіа-запити для адаптивності */
+
+/* Для екранів з шириною до 768px (мобільні пристрої) */
+@media (max-width: 768px) {
+    .col-md-4 {
+        flex: 0 1 100%;
+        max-width: 100%;
+    }
+
+    .custom-paragraph1, .custom-paragraph2 {
+        width: 100%;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .ron1 {
+        flex-direction: column;
+        padding: 0 10px;
+    }
+
+    .col1-md-8, .col1-md-4 {
+        max-width: 100%;
+    }
+
+    .hero1-img img {
+        max-width: 100%;
+    }
+
+    .section-title {
+        font-size: 36px;
+    }
+}
+
+/* Для екранів з шириною від 769px до 1200px (планшети) */
+@media (min-width: 769px) and (max-width: 1200px) {
+    .custom-paragraph1, .custom-paragraph2 {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .ron1 {
+        padding: 0 20px;
+    }
+}

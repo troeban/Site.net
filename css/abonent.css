@@ -1,0 +1,223 @@
+.feedback-section form {
+    display: flex; 
+    flex-direction: column; 
+    align-items: flex-start; 
+    gap: 15px; 
+}
+.feedback-section {
+    background-color:rgb(193,198,201); 
+    padding: 30px; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    margin-top: 20px; 
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+form .form-control {
+    max-width: 400px; 
+    width: 100%; 
+}
+
+form button {
+    max-width: 150px; 
+    align-self: flex-start; 
+}
+.section-title {
+    font-size: 50px; 
+    text-align: left; 
+    margin-bottom: 20px; 
+    margin-top: 40px; 
+    color: #333; 
+    margin-left: 50px;
+}
+.section-centr{
+    font-size: 50px; 
+    text-align: center; 
+    margin-bottom: 20px; 
+    margin-top: 40px; 
+    color: #333; 
+    margin-left: 50px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.section1{
+    font-size: 16px; 
+    text-align: left; 
+    margin-left: 20px; 
+
+    
+}
+.section{
+    text-align: justify; 
+    margin-left: 20px; 
+    width: 40%; 
+}
+.docs-links {
+    display: flex; 
+    flex-direction: column; 
+    gap: 10px; 
+    margin-top: 15px; 
+    margin-left: 50px;
+}
+
+.docs-links a {
+    width: 17%; 
+    padding: 5px 10px; /* Добавляем внутренние отступы для удобства */
+    background-color: #f4f4f4; /* Цвет фона (опционально) */
+    color: #333; /* Цвет текста */
+    text-decoration: none; /* Убираем подчеркивание */
+    border: 1px solid #ccc; /* Добавляем границу (опционально) */
+    border-radius: 5px; /* Скругляем углы */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Плавный переход при наведении */
+}
+
+.docs-links a:hover {
+    background-color: #0a58ca;
+    color: white;
+}
+/* Темная тема */
+body.dark-theme .docs-links a {
+    background-color: #444444;
+    color: #ffffff; /* Светло-синий цвет ссылок */
+}
+
+body.dark-theme .docs-links a:hover {
+    background-color: #555555;
+    
+}
+
+.faq-section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.faq-item {
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.faq-question {
+    background-color: #e9ecef;
+    padding: 15px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.faq-question:hover {
+    background-color: #d6d8db;
+}
+
+.faq-answer {
+    max-height: 0; /* Начальное состояние: высота 0 */
+    overflow: hidden; /* Скрываем содержимое */
+    padding: 0; /* Убираем отступы */
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+    line-height: 1.6;
+    transition: max-height 0.5s ease, padding 0.5s ease; /* Плавная анимация */
+}
+
+.faq-answer.show {
+    max-height: 200px; /* Максимальная высота для раскрытого текста */
+    padding: 15px; /* Добавляем отступы при раскрытии */
+}
+/* Медіа-запити для адаптивності */
+
+/* Для екранів з шириною до 768px (мобільні пристрої) */
+@media (max-width: 768px) {
+    .section-title, .section-centr {
+        font-size: 36px;
+        margin-left: 10px;
+    }
+
+    .section {
+        width: 100%;
+        margin-left: 10px;
+    }
+
+    .docs-links {
+        margin-left: 10px;
+    }
+
+    .docs-links a {
+        width: 100%;
+    }
+}
+
+/* Для екранів з шириною від 769px до 1200px (планшети) */
+@media (min-width: 769px) and (max-width: 1200px) {
+    .section {
+        width: 80%;
+    }
+
+    .docs-links a {
+        width: 30%;
+    }
+}
+#alertBox {
+    position: fixed;
+    top: -100px; /* Початкове місце за межами екрана */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 400px; /* Менша ширина для компактного вигляду */
+    padding: 15px;
+    background-color: #28a745;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    z-index: 9999;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease, top 0.5s ease; /* Плавна анімація для появи */
+}
+
+#alertBox.show {
+    display: block;
+    opacity: 1;
+    top: 20px; /* Відстань від верхнього краю */
+}
+/* Темная тема */
+body.dark-theme .feedback-section {
+    background-color: #333333; /* Темный фон */
+    color: #ffffff; /* Белый текст */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* Более темная тень */
+}
+
+/* Стили для полей ввода */
+.feedback-section .form-control {
+    background-color: #ffffff; /* Светлый фон для полей */
+    color: #000000; /* Черный текст */
+    border: 1px solid #ccc;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark-theme .feedback-section .form-control {
+    background-color: #444444; /* Темный фон для полей */
+    color: #ffffff; /* Белый текст */
+    border: 1px solid #555555;
+}
+body.dark-theme .section-centr {
+    color: #ffffff; /* Белый цвет текста */
+}
+
+/* Темная тема вопрос ответ */
+body.dark-theme .faq-section {
+    background-color: #333333; /* Темный фон секции */
+    color: #ffffff; /* Белый текст */
+}
+
+body.dark-theme .faq-question {
+    background-color: #444444; /* Темный фон вопроса */
+    color: #ffffff; /* Белый текст */
+}
+
+body.dark-theme .faq-answer {
+    background-color: #555555; /* Темный фон ответа */
+    color: #ffffff; /* Белый текст */
+}

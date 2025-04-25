@@ -1,0 +1,108 @@
+.cont {
+    display: flex;
+    justify-content: center; /* Центрируем по горизонтали */
+    align-items: center; /* Центрируем по вертикали */
+    height: 80vh; /* Занимаем всю высоту экрана */
+}
+.kont {
+    display: flex;
+    flex-direction: column; /* Располагаем элементы в столбик */
+    align-items: center; /* Выравниваем элементы по центру */
+    gap: 15px; /* Добавляем отступы между элементами */
+    width: 500px; /* Устанавливаем фиксированную ширину */
+    max-width: 100%; /* Ограничиваем ширину до 90% экрана */
+    margin: 0 auto; /* Центрируем форму на странице */
+    background: rgb(193, 198, 201);
+    border-radius: 15px; /* Скругляем углы */
+    padding: 20px; /* Добавляем внутренние отступы */
+}
+
+.input-box {
+    width: 80%; /* Растягиваем поля ввода на всю ширину контейнера */
+    position: relative;
+}
+
+.input-box input {
+    width: 80%; /* Поля ввода занимают всю ширину */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.input-box i {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #333;
+}
+
+.remember {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+}
+
+button.btn {
+    width: 50%; /* Кнопка занимает всю ширину */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.register-link {
+    text-align: center;
+}
+
+/* Медіа-запити для адаптивності */
+
+/* Для екранів з шириною до 768px (мобільні пристрої) */
+@media (max-width: 768px) {
+    .kont {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .input-box, .input-box input, .remember, button.btn {
+        width: 100%;
+    }
+}
+
+/* Для екранів з шириною від 769px до 1200px (планшети) */
+@media (min-width: 769px) and (max-width: 1200px) {
+    .kont {
+        width: 80%;
+    }
+}
+
+/* Темная тема */
+body.dark-theme .kont {
+    background-color: #333333; /* Темный фон */
+    color: #ffffff; /* Белый текст */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* Более темная тень */
+}
+
+body.dark-theme .kont .input-box input {
+    background-color: #444444; /* Темный фон поля */
+    color: #ffffff; /* Белый текст */
+    border: 1px solid #555555;
+}
+
+body.dark-theme .kont .btn {
+    background-color: #555555; /* Темный фон кнопки */
+    color: #ffffff; /* Белый текст */
+}
+
+body.dark-theme .kont .remember label {
+    color: #ffffff; /* Белый текст для чекбокса */
+}
+
+/* Значки в полях "Логін" и "Пароль" */
+.input-box i {
+    color: #555555; /* Синий цвет значков */
+    transition: color 0.3s ease; /* Плавный переход цвета */
+}
+
+/* Изменение цвета при фокусе на поле ввода */
+.input-box input:focus + i {
+    color: #28a745; /* Зеленый цвет значков при фокусе */
+}
